@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Lab 2</title>
+
+	<style>
+		.heading-div{
+			background: #000000;
+			color:#C83759;
+			text-align: center;
+			font-family: Lucida Handwriting;
+			width: 98% auto;
+			padding: 0.05%;
+			text-align: center;
+			font-size: 26px;
+
+
+		}
+		.class-img{
+			height: 10%;
+			width: 10%;
+			margin-right:2%;
+		}
+
+
+		.img-list{
+			background: #C83759;
+			width: 98% auto;
+			padding: 1%;
+			text-align: center;
+		
+
+		}	
+		
+		.img-list div{
+			display:none;
+
+		}
+
+		.img-list div:target{
+			display:block;
+			padding: 2%;
+		}
+
+		.image-size{
+			height: 60%;
+			width: 60%;
+
+		}
+
+			
+	</style>
+</head>
+
+
+<body>
+	<div class="heading-div">
+	<h1>My Gallery</h1>
+	</div>
+	<div class="img-list">
+	
+		<a href="#img1"><img src="images/img1.jpg" class="class-img"></a>
+		<a href="#img2"><img src="images/img2.jpg" class="class-img"></a>
+		<a href="#img3"><img src="images/img3.jpg" class="class-img"></a>
+		<a href="#img4"><img src="images/img4.jpg" class="class-img"></a>
+		<a href="#img5"><img src="images/img5.jpg" class="class-img"></a>
+	
+
+	
+		<div id="img1">
+			<img src="images/img1.jpg" class="image-size">
+			<br>
+			<a href="#img5"><button style= "margin-right: 1%">Previous</button></a>
+			<a href="#img2"><button>Next</button></a>
+		</div>
+
+		<div id="img2">
+			<img src="images/img2.jpg" class="image-size">
+			<br>
+			<a href="#img1"><button style= "margin-right: 1%">Previous</button></a>
+			<a href="#img3"><button>Next</button></a>
+		</div>
+
+		<div id="img3">
+			<img src="images/img3.jpg" class="image-size">
+			<br>
+			<a href="#img2"><button style= "margin-right: 1%">Previous</button></a>
+			<a href="#img4"><button>Next</button></a>
+		</div>
+
+		<div id="img4">
+			<img src="images/img4.jpg" class="image-size">
+			<br>
+			<a href="#img3"><button style= "margin-right: 1%">Previous</button></a>
+			<a href="#img5"><button>Next</button></a>
+		</div>
+
+		<div id="img5">
+			<img src="images/img5.jpg" class="image-size">
+			<br>
+			<a href="#img4"><button style= "margin-right: 1%">Previous</button></a>
+			<a href="#img1"><button>Next</button></a>
+		</div>
+
+	</div>
+
+</body>
+</html>
